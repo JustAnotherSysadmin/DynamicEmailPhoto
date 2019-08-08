@@ -56,7 +56,8 @@
 #  https://stackoverflow.com/questions/13447554/how-to-get-input-field-value-using-php
 #
 
-
+# Convert source HTML/CSS to Inlined CSS:
+#  https://htmlemail.io/inline/
 
 
 
