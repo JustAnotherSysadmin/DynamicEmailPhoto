@@ -1,0 +1,27 @@
+Policy:  User-Accounts_MicrosoftOffice_Email-Signature-REMOVE-Local-Signatures
+
+Policy details:
+
+User Configuration -> Policies -> Administrative Templates
+  Microsoft Outlook 2010/Outlook Options/Mail Format
+    "Do Not allow signatures for e-mail messages"   Enabled
+  Microsoft Outlook 2013/Outlook Options/Mail Format
+    "Do Not allow signatures for e-mail messages"   Enabled
+  Microsoft Outlook 2016/Outlook Options/Mail Format
+    "Do Not allow signatures for e-mail messages"   Enabled
+    
+Forcefully blow away signature directory (USE CAUTION ON THIS ONE!!!!):
+User Configuration -> Preferences -> Windows Settings -> Folders -> Folder (Path: %APPDATA%\Microsoft\Signatures)
+  Signatures (Order: 1)
+    General
+      Action:  Replace
+      Attributes:
+        Path:  %APPDATA%\Microsoft\Signatures
+        Read-only: Disabled
+        Hidden:  Disabled
+        Archive: Enabled
+      Delete this folder (if emptied): Enabled
+      Recursively delete all subfolders (if emptied): Enabled
+      Delete all files in the folder(s):  Enabled
+      Allow delettion of read-only files/folders:  Enabled
+      Ignore errors for files/folders that cannot be deleted: Enabled
